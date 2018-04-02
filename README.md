@@ -3,7 +3,7 @@ Java implementation of AI Chess game using a search scheme with alpha-beta pruni
 
 ## **Development Environment**
 
-This project was developed in the Eclipse IDE; to run this program download the code and import it to Eclipse. The lates version for the Eclipse IDE can be found [here](http://www.eclipse.org/downloads/eclipse-packages/)
+This project was developed in the Eclipse IDE; to run this program download the code and import it to Eclipse. The latest version for the Eclipse IDE can be found [here](http://www.eclipse.org/downloads/eclipse-packages/)
 
 ## **Description of the classes**
 
