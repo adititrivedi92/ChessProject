@@ -12,11 +12,9 @@ This is the driver class which contains the main method. The white pieces prefix
 
 - **_Piece.java_** <br />
 This is an abstract class to describe a chess piece. All other classes, representing different type of chess pieces - Bishop, Horse(Knight), King, Pawn, Queen and Rook inherit from this class. This class has two data members - player which can have value 1 or 2, indicating a piece belonging to human player and a piece belonging to computer player respectively. Besides this it has a variable notFirstMove which is used to determine if this is the first move or not for the Pawn. There are three abstract methods implemented in the classes which inherit from this class:
-   - *myMoves(): generates an array list of the valid moves for the piece according to the rules of the game.
-   - getBaseValue(): returns the base value of the piece depending on the type of the piece
-   - getPlaceValue(): returns the rank/score of the piece depending on its current position on the chess board
-
-
+   - *myMoves()*: generates an array list of the valid moves for the piece according to the rules of the game.
+   - *getBaseValue()*: returns the base value of the piece depending on the type of the piece
+   - *getPlaceValue()*: returns the rank/score of the piece depending on its current position on the chess board
 
 - **_PieceSquareMatrix.java_** <br />
 This class stores a 2-dimensional array for each type of piece. Piece square matrix stores scores/ranks for each type of piece at different positions on the chess board. Built with the help of the[chessprogrammingwiki] (https://chessprogramming.wikispaces.com)
@@ -40,9 +38,10 @@ This class is used to construct the move objects. Each move object has a source 
 This class has to data members, it just has one method called *makeAMove()* which generates all possible moves for the current configuration of the board and returns these moves in an array list. This method is invoked by the AIEngine class.
 
 - **_Board.java_** <br />
-This class models the description of the board as a 2-dimensional (8x8) array of Pieces. This class has method to initialize the board to its initial configuration and display the board configuration on the console. Besides the getter and setter methods for its data members this class contains move method, which moves the selected piece from source to destination. This class forms the core of the moves made by human player.  It has one static variable cge of its own class type and a list of active pieces. The main method of this class is *DoMove()* which accepts the parameters - move object (which specifies the source and destination of the move) and the player number. This method executes the move specified in the move object with help of other methods:
+This class models the description of the board as a 2-dimensional (8x8) array of Pieces. This class has method to initialize the board to its initial configuration and display the board configuration on the console. Besides the getter and setter methods for its data members this class contains move method, which moves the selected piece from source to destination. 
 
 - **_ChessGameEngine.java_** <br />
+This class forms the core of the moves made by human player.  It has one static variable cge of its own class type and a list of active pieces. The main method of this class is *DoMove()* which accepts the parameters - move object (which specifies the source and destination of the move) and the player number. This method executes the move specified in the move object with help of other methods:
      - *validateSrc()*: validates the source of move in all respects 
      - *validateDest()*: validates the destination of the move in all respects 
      - *movePromotion()*: makes the move and promotes the pawn if eligible to Queen <br />
