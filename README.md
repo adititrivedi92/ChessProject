@@ -54,11 +54,10 @@ The board evaluation strategy is based on the base value of the piece and its po
 
 
 ## **References**
-Piece values and Piece value square table for board evaluation strategies taken from:
-https://chessprogramming.wikispaces.com/Simplified+evaluation+function
-http://www.chessbin.com/post/Piece-Square-Table
-https://www.chessprogramming.net/using-excel-to-help-create-piece-square-tables/
-alpha beta pruning
-https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977
+Piece values and Piece value square table for board evaluation strategies taken from: <br /> 
+https://chessprogramming.wikispaces.com/Simplified+evaluation+function<br />
+http://www.chessbin.com/post/Piece-Square-Table<br />
+https://www.chessprogramming.net/using-excel-to-help-create-piece-square-tables/<br />
+https://medium.freecodecamp.org/simple-chess-ai-step-by-step-1d55a9266977<br />
 
 
