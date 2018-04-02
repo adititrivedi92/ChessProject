@@ -1,7 +1,7 @@
 # ChessProject
 Java implementation of AI Chess game using a search scheme with alpha-beta pruning
 
-# Development Environment
+## ** Development Environment**
 
 This project was developed in the Eclipse IDE; to run this program download the code and import it to Eclipse. The lates version for the Eclipse IDE can be found [here](http://www.eclipse.org/downloads/eclipse-packages/)
 
@@ -19,10 +19,10 @@ This is an abstract class to describe a chess piece. All other classes, represen
 
 
 - *PieceSquareMatrix.java* <br />
-This class stores a 2-dimensional array for each type of piece. Piece square matrix stores scores/ranks for each type of piece at different positions on the chess board. (built with help of https:chessprogramming.wikispaces.com)
+This class stores a 2-dimensional array for each type of piece. Piece square matrix stores scores/ranks for each type of piece at different positions on the chess board. Built with the help of the [chessprogrammingwiki] (https:chessprogramming.wikispaces.com)
 
 - *Bishop.java, Horse.java, King.java, Pawn.java, Queen.java, Rook.java* <br />
-All these classes extend the Piece class. The implementation of the myMoves method is added according to the chess game rules in each of these classes. getBaseValue() returns the value of the piece as follows:
+All these classes extend the Piece class. The implementation of the myMoves method is added according to the chess game rules in each of these classes. getPlaceValue()returns the positional value and retrieves data from Piece square tables specified in the PieceSquareMatrix class as described above. getBaseValue() returns the value of the piece as follows:
    - Pawn - 100
    - Horse - 320
    - Bishop - 330
@@ -30,7 +30,7 @@ All these classes extend the Piece class. The implementation of the myMoves meth
    - Queen - 900
    - King - 20000<br />
    
-getPlaceValue()returns the positional value and retrieves data from Piece square tables specified in the PieceSquareMatrix class as described above.
+
 
 - *Square.java* <br />
 This class represents each cell of the board in terms of x and y coordinates. This class is used to build the objects of the Move class. A method called equals has been implemented for this class to compare if two objects refer to the same entity.
