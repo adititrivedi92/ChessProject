@@ -1,7 +1,7 @@
 # ChessProject
 Java implementation of AI Chess game using a search scheme with alpha-beta pruning
 
-## ** Development Environment**
+## **Development Environment**
 
 This project was developed in the Eclipse IDE; to run this program download the code and import it to Eclipse. The lates version for the Eclipse IDE can be found [here](http://www.eclipse.org/downloads/eclipse-packages/)
 
@@ -54,7 +54,6 @@ The board evaluation strategy is based on the base value of the piece and its po
 
 
 ## **References**
-Piece values and Piece value square table for board evaluation strategies taken from: <br /> 
 https://chessprogramming.wikispaces.com/Simplified+evaluation+function<br />
 http://www.chessbin.com/post/Piece-Square-Table<br />
 https://www.chessprogramming.net/using-excel-to-help-create-piece-square-tables/<br />
