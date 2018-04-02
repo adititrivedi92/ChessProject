@@ -43,9 +43,9 @@ This class has to data members, it just has one method called *makeAMove()* whic
 This class models the description of the board as a 2-dimensional (8x8) array of Pieces. This class has method to initialize the board to its initial configuration and display the board configuration on the console. Besides the getter and setter methods for its data members this class contains move method, which moves the selected piece from source to destination. This class forms the core of the moves made by human player.  It has one static variable cge of its own class type and a list of active pieces. The main method of this class is *DoMove()* which accepts the parameters - move object (which specifies the source and destination of the move) and the player number. This method executes the move specified in the move object with help of other methods:
 
 - **_ChessGameEngine.java_** <br />
-     - *validateSrc(): validates the source of move in all respects 
-     - validateDest(): validates the destination of the move in all respects 
-     - movePromotion(): makes the move and promotes the pawn if eligible to Queen* <br />
+     - *validateSrc()*: validates the source of move in all respects 
+     - *validateDest()*: validates the destination of the move in all respects 
+     - *movePromotion()*: makes the move and promotes the pawn if eligible to Queen <br />
 
 - **_AIEngine.java_** <br />
 This class forms the brain of the computer moves and the *findBestMove()* method is invoked by the driver class (ChessGame.java) when it the turn of the computer player. This uses alphabeta pruning algorithm to determine the best move. The level of depth of the search of best move for the *findBestMove()* method is inputted from the user while launching the game. 
